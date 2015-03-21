@@ -6,13 +6,13 @@ The raw data is also described in the README.txt file in the 'UCI HAR Dataset' d
 
 The tidy data contains the fields:
 
-[1] subject id: the subject identifier, an integer from 1 - 30 for each of the subjects in the study
+[1] subjectid: the subject identifier, an integer from 1 - 30 for each of the subjects in the study
 
 [2] activity: a label for each of the six activities in the study: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS and WALKING_UPSTAIRS.
 
 The 86 feature variables were chosen based on whether the feature names (taken from features.txt) contains the words 'mean' or 'std' for mean and standard deviation. This was NOT case-sensitive so any representation of those labels was accepted, e.g. Mean or mean. That was a decision based on not knowing anything about the study or statistics for that matter. I don't think it matters in the context of this submission so I decided to make it case insensitive.
 
-The mean was calculated for each feature variable:
+Each of the features in the raw data set were normalized and bounded within [-1,1]. The mean was calculated for each variable by grouping on subject and activity:
 
  [3] "tBodyAcc.mean...X"                    "tBodyAcc.mean...Y"                   
  [5] "tBodyAcc.mean...Z"                    "tBodyAcc.std...X"                    
