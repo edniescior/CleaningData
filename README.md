@@ -16,6 +16,7 @@ The Code Book that accompanies this file describes the transformations done on t
 ### What It Does
 
 Running the script:
+
 1. Reads in the test data and appends the appropriate activity and subject ids to each record.
 2. Reads in the training data and appends the appropriate activity and subject ids to each record.
 3. Combines the test and training data into a single set.
